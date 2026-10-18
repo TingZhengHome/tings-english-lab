@@ -1,0 +1,1887 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ting's English Lab 廷暉英語認知工坊 | 認知負荷工程 × AI 全自動賦能的高端英語教學</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', '"Noto Sans TC"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              200: '#bae0fd',
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#075985',
+              900: '#0c4a6e',
+            },
+            accent: {
+              indigo: '#6366f1',
+              emerald: '#10b981',
+              amber: '#f59e0b',
+              purple: '#8b5cf6',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass-card {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(226, 232, 240, 0.85);
+    }
+    .dark .glass-card {
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(51, 65, 85, 0.6);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #0284c7 0%, #6366f1 50%, #8b5cf6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .radar-polygon {
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    /* 3D Perspective Floating Slanted Cards */
+    .hero-slanted-left {
+      transform: perspective(1200px) rotateY(12deg) rotateZ(-2.5deg);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .hero-slanted-left:hover {
+      transform: perspective(1200px) rotateY(4deg) rotateZ(0deg) scale(1.02);
+    }
+    .hero-slanted-right {
+      transform: perspective(1200px) rotateY(-12deg) rotateZ(2.5deg);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .hero-slanted-right:hover {
+      transform: perspective(1200px) rotateY(-4deg) rotateZ(0deg) scale(1.02);
+    }
+    /* Subtle Diagonal Mask */
+    .diagonal-cut {
+      clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 97%);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- Navigation Bar -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-card border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-sky-500 to-indigo-600 flex items-center justify-center text-white font-black text-xl shadow-md shadow-sky-500/20">
+          T
+        </div>
+        <div>
+          <span class="text-lg font-black tracking-tight text-slate-900 block leading-tight">Ting's English Lab</span>
+          <span class="text-[11px] font-medium text-slate-500 tracking-wider uppercase">廷暉英語認知工坊</span>
+        </div>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-600">
+        <a href="#philosophy" class="hover:text-sky-600 transition">教學理念</a>
+        <a href="#ai-automation" class="hover:text-sky-600 transition flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          AI 全自動引擎
+        </a>
+        <a href="#dashboard-demo" class="hover:text-sky-600 transition">能力儀表板</a>
+        <a href="#curriculum" class="hover:text-sky-600 transition">破分講義</a>
+        <a href="#certificates" class="hover:text-sky-600 transition">官方證照</a>
+        <a href="#testimonials" class="hover:text-sky-600 transition">學生成效</a>
+        <a href="#about" class="hover:text-sky-600 transition">關於廷暉</a>
+      </nav>
+
+      <div class="flex items-center gap-2.5">
+        <a href="https://line.me/ti/p/~TingZheng2" target="_blank" rel="noopener noreferrer" class="hidden sm:flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 text-xs font-bold transition shadow-xs">
+          <span class="w-2 h-2 rounded-full bg-[#06C755] animate-pulse"></span>
+          <span>LINE: TingZheng2</span>
+        </a>
+        <a href="#booking" class="px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-sky-600 text-white font-semibold text-sm transition-all duration-200 shadow-sm hover:shadow-lg hover:shadow-sky-500/20">
+          預約試教診斷
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with Flanking Slanted Visual Cards -->
+  <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+    <!-- Subtle Ambient Glows -->
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-gradient-to-tr from-sky-200/40 via-indigo-100/40 to-transparent blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute top-1/3 left-4 w-72 h-72 bg-emerald-100/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute top-1/3 right-4 w-72 h-72 bg-purple-100/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Top Layout Grid: Left Slanted Visual + Center Headline + Right Slanted Visual -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+
+        <!-- Left Flanking Slanted Card (Student with iPad / FigJam) -->
+        <div class="hidden lg:block lg:col-span-3">
+          <div class="hero-slanted-left bg-white p-3 rounded-3xl border border-slate-200/90 shadow-2xl relative overflow-hidden group">
+            <div class="relative rounded-2xl overflow-hidden aspect-[4/5] bg-slate-100">
+              <img src="images/hero_student_tablet_figma.jpg" alt="學生使用 iPad 與數位白板學習" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-black/10"></div>
+              
+              <!-- Floating Pill -->
+              <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur-md text-[11px] font-bold text-sky-700 shadow-sm border border-white/60 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-sky-500"></span>
+                Figma 數位白板沉浸教學
+              </div>
+
+              <!-- Bottom Overlay Caption -->
+              <div class="absolute bottom-3 left-3 right-3 text-white">
+                <div class="text-xs font-bold leading-snug">手寫圈記 × 句型圖解</div>
+                <div class="text-[10px] text-slate-300 mt-0.5">長難句即時拆解 · 告別抽象死背</div>
+              </div>
+            </div>
+            
+            <div class="p-2 pt-3 flex items-center justify-between text-[11px] text-slate-500 font-medium">
+              <span>✍️ 課堂板書視覺化</span>
+              <span class="text-emerald-600 font-bold">100% 筆跡即時留存</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center Main Content (6 cols on Desktop) -->
+        <div class="lg:col-span-6 text-center space-y-6">
+          
+          <!-- Credential Pills -->
+          <div class="inline-flex flex-wrap items-center justify-center gap-2 px-4 py-2 rounded-full bg-white/95 border border-slate-200 shadow-sm text-xs font-semibold text-slate-700">
+            <span class="flex items-center gap-1 text-sky-600">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              國立臺灣師範大學 教育專業出身
+            </span>
+            <span class="text-slate-300">|</span>
+            <span class="text-indigo-600">ASU 國際 TESOL 認證</span>
+            <span class="text-slate-300">|</span>
+            <span class="text-emerald-600">多益 960 金證 / 指考英文 PR98</span>
+            <span class="text-slate-300">|</span>
+            <span class="text-purple-600">10 年家教資歷</span>
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-slate-900 leading-[1.2]">
+            從死記硬背到語言本能<br>
+            以<span class="gradient-text">「認知負荷工程」與 AI 科技賦能</span><br>
+            重塑你的英語大腦
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl mx-auto font-normal">
+            打破傳統填鴨體制。結合 <strong>Figma 沉浸式視覺白板</strong>、<strong>Notion 智能後台</strong> 與 <strong>全自動 AI 課後閉環系統</strong>，為每一位學員量身打造精準的破分躍遷路徑。
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
+            <a href="https://line.me/ti/p/~TingZheng2" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-[#06C755] hover:bg-[#05b34c] text-white font-bold text-sm sm:text-base shadow-xl shadow-[#06C755]/25 transition-all duration-200 flex items-center justify-center gap-2 group">
+              <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 5.92 2 10.75c0 2.97 1.7 5.61 4.35 7.15-.19.68-.69 2.47-.79 2.85-.13.48.18.47.37.34.16-.1 2.42-1.63 3.39-2.29.87.16 1.77.25 2.68.25 5.52 0 10-3.92 10-8.75S17.52 2 12 2z"/></svg>
+              <span>家長 LINE 快速諮詢</span>
+            </a>
+            <a href="#booking" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm sm:text-base shadow-xl shadow-slate-900/20 transition-all duration-200">
+              預約 30 分鐘試教診斷
+            </a>
+            <a href="#ai-automation" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-white hover:bg-slate-100 text-slate-800 font-semibold text-sm sm:text-base border border-slate-200 shadow-sm transition">
+              探索 AI 交付閉環 ➔
+            </a>
+          </div>
+          <div class="text-xs text-slate-500 pt-1 flex items-center justify-center gap-2">
+            <span>💬 家長直接加 LINE 諮詢：<strong class="text-slate-800 font-bold">TingZheng2</strong></span>
+            <button type="button" onclick="copyLineId()" class="text-sky-600 hover:underline cursor-pointer">(一鍵複製 ID)</button>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 border-t border-slate-200/80">
+            <div class="p-2">
+              <div class="text-xl sm:text-2xl font-black text-slate-900">100%</div>
+              <div class="text-[11px] text-slate-500 font-medium mt-0.5">客製三格式作業</div>
+            </div>
+            <div class="p-2">
+              <div class="text-xl sm:text-2xl font-black text-sky-600">CEFR C2</div>
+              <div class="text-[11px] text-slate-500 font-medium mt-0.5">母語頂標錨定雷達</div>
+            </div>
+            <div class="p-2">
+              <div class="text-xl sm:text-2xl font-black text-indigo-600">10 分鐘</div>
+              <div class="text-[11px] text-slate-500 font-medium mt-0.5">課後全自動派發音檔</div>
+            </div>
+            <div class="p-2">
+              <div class="text-xl sm:text-2xl font-black text-emerald-600">10 年</div>
+              <div class="text-[11px] text-slate-500 font-medium mt-0.5">名校升學考證實戰</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Flanking Slanted Card (Teacher Guiding Student with AI) -->
+        <div class="hidden lg:block lg:col-span-3">
+          <div class="hero-slanted-right bg-white p-3 rounded-3xl border border-slate-200/90 shadow-2xl relative overflow-hidden group">
+            <div class="relative rounded-2xl overflow-hidden aspect-[4/5] bg-slate-100">
+              <img src="images/hero_tutor_ai_guidance.jpg" alt="老師引導學生使用 AI 科技輔助英語學習" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-black/10"></div>
+              
+              <!-- Floating Pill -->
+              <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur-md text-[11px] font-bold text-emerald-700 shadow-sm border border-white/60 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                AI 科技賦能閉環
+              </div>
+
+              <!-- Bottom Overlay Caption -->
+              <div class="absolute bottom-3 left-3 right-3 text-white">
+                <div class="text-xs font-bold leading-snug">自然語境 × 智能自適應</div>
+                <div class="text-[10px] text-slate-300 mt-0.5">全息文法架構 · 課後即時閉環</div>
+              </div>
+            </div>
+            
+            <div class="p-2 pt-3 flex items-center justify-between text-[11px] text-slate-500 font-medium">
+              <span>🤖 獨家 Sidecar 管線</span>
+              <span class="text-sky-600 font-bold">下課 10 分鐘自主派發</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Mobile/Tablet Responsive Visual Strip (Shows both images side by side on small screens) -->
+      <div class="mt-10 grid grid-cols-2 gap-4 lg:hidden">
+        <div class="bg-white p-2 rounded-2xl border border-slate-200 shadow-md">
+          <div class="aspect-[4/3] rounded-xl overflow-hidden relative">
+            <img src="images/hero_student_tablet_figma.jpg" alt="Figma 數位白板" class="w-full h-full object-cover">
+            <span class="absolute bottom-1.5 left-1.5 px-2 py-0.5 rounded-md bg-black/60 text-white text-[10px] font-semibold backdrop-blur-sm">Figma 視覺板書</span>
+          </div>
+        </div>
+        <div class="bg-white p-2 rounded-2xl border border-slate-200 shadow-md">
+          <div class="aspect-[4/3] rounded-xl overflow-hidden relative">
+            <img src="images/hero_tutor_ai_guidance.jpg" alt="AI 輔助英語教學" class="w-full h-full object-cover">
+            <span class="absolute bottom-1.5 left-1.5 px-2 py-0.5 rounded-md bg-black/60 text-white text-[10px] font-semibold backdrop-blur-sm">AI 閉環賦能</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Core Philosophy Section -->
+  <section id="philosophy" class="py-20 bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold tracking-widest text-sky-600 uppercase bg-sky-50 px-3 py-1 rounded-full border border-sky-100">Teaching Methodology</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-3">
+          四大核心教學架構：不只教英文，更優化大腦認知
+        </h2>
+        <p class="text-slate-600 text-sm mt-3">
+          擺脫死背單字 7000 字與枯燥文法公式。我們用認知心理學與現代語言學，把抽象規則轉化為清晰直覺。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Pillar 1 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:shadow-xl transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center font-bold text-xl mb-5">
+            01
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">認知負荷最小化</h3>
+          <p class="text-xs text-sky-600 font-medium mb-3">Cognitive Load Minimization</p>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            採用「雙跨頁同位句微創手術」，左頁並列均標、前標，右頁展現頂標範文。無需前後翻頁，一眼看穿如何將平庸句升級為具備哲學思辨深度的精準結構。
+          </p>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:shadow-xl transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold text-xl mb-5">
+            02
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">大腦聲音空間建構</h3>
+          <p class="text-xs text-indigo-600 font-medium mb-3">Internal Sonic Space</p>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            閱讀提速的核心不是「大量硬刷題」，而是在心中建立母語節奏的「聲音空間」。深入剖析弱讀、連音與語調起伏，在開口與閱讀時自然切換英語大腦。
+          </p>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:shadow-xl transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold text-xl mb-5">
+            03
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">語源學與底層框架</h3>
+          <p class="text-xs text-emerald-600 font-medium mb-3">Etymology & Structural Logic</p>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            從印歐原始語根（PIE）到拉丁、希臘詞源，看穿單字背後的「隱喻容器」。不再死背字串，而是徹底理解詞彙構造與高頻搭配詞（Collocations）。
+          </p>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:shadow-xl transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center font-bold text-xl mb-5">
+            04
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">跨學科前沿思辨教材</h3>
+          <p class="text-xs text-purple-600 font-medium mb-3">Interdisciplinary Reasoning</p>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            教材取材自行為經濟學（推力理論 Nudge Theory）、神經科學（NAD+ 與神經可塑性）、Biohacking 與當代科技播客（Huberman Lab、Lex Fridman），直接接軌國際頂尖思潮。
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AI Automation Pipeline Section -->
+  <section id="ai-automation" class="py-24 bg-slate-900 text-white relative overflow-hidden">
+    <!-- Background grid decoration -->
+    <div class="absolute inset-0 bg-[radial-gradient(#334155_1px,transparent_1px)] [background-size:24px_24px] opacity-25"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold mb-4">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          獨家自主研發科技護城河
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
+          業界首創：AI 全自動教學交付閉環
+        </h2>
+        <p class="text-slate-400 text-base mt-4">
+          課堂結束後的 10 分鐘內，系統級背景自動化管線（Sidecar Daemon）即刻自主啟動。
+          完成從「視覺辨識 ➔ 雙軌回饋 ➔ 客製作業 ➔ 母語音檔 ➔ 錯題重測 ➔ 成長儀表板」的全量閉環交付。
+        </p>
+      </div>
+
+      <!-- Pipeline Step Cards (6 Steps) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Step 1 -->
+        <div class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700/80 hover:border-sky-500/50 transition">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-1 text-xs font-bold rounded-lg bg-sky-500/20 text-sky-400 border border-sky-500/30">STEP 01</span>
+            <span class="text-xs text-slate-400">課堂當下</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Figma / FigJam 沉浸式板書</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            拒絕枯燥投影片。在無邊界數位白板上即時繪製文法骨架圖、精細拆解長難句、手寫錯題圈記。所有學習歷程留下清晰視覺軌跡。
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700/80 hover:border-indigo-500/50 transition">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-1 text-xs font-bold rounded-lg bg-indigo-500/20 text-indigo-400 border border-indigo-500/30">STEP 02</span>
+            <span class="text-xs text-slate-400">課後 10 分鐘</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">多模態視覺與筆跡分析</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            系統自動比對 Notion 學生課表，喚醒視覺解析引擎，全量讀取當日白板紅筆訂正、題型劃記與單字板書，提煉出當日核心弱點標籤。
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700/80 hover:border-emerald-500/50 transition">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-1 text-xs font-bold rounded-lg bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">STEP 03</span>
+            <span class="text-xs text-slate-400">原子化寫入 Notion</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">雙軌即時學習反饋生成</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            自動產生 <strong>👦 學生版</strong>（親切心法、踩雷避坑點、本週任務）與 <strong>👨‍👩‍👦 家長版</strong>（客觀進度、量化指標、後續追蹤），即時寫入 Notion 課堂紀錄。
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700/80 hover:border-amber-500/50 transition">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-500/20 text-amber-400 border border-amber-500/30">STEP 04</span>
+            <span class="text-xs text-slate-400">雲端即時派送</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">全客製化三格式作業派發</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            產出 40~50 核心單字 + 35~44 題全真測驗 + 詳解。自動生成 <strong>Word (.docx)</strong>、<strong>PDF</strong> 與手機一秒閱覽的 <strong>PNG 預覽圖</strong>。
+          </p>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700/80 hover:border-purple-500/50 transition">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-1 text-xs font-bold rounded-lg bg-purple-500/20 text-purple-400 border border-purple-500/30">STEP 05</span>
+            <span class="text-xs text-slate-400">自然發音融入</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">AI 擬真母語朗讀音檔</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            作業中的閱讀長文與克漏字篇章，自動生成美式母語等級的高音質朗讀 MP3，收錄於專屬音檔資料夾，供學生邊聽邊讀、模仿語調。
+          </p>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700/80 hover:border-pink-500/50 transition">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-1 text-xs font-bold rounded-lg bg-pink-500/20 text-pink-400 border border-pink-500/30">STEP 06</span>
+            <span class="text-xs text-slate-400">間隔重複防遺忘</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">艾賓浩斯螺旋錯題重測庫</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            白板錯題自動登錄專屬錯題庫（Error Bank），系統在後續作業中依遺忘曲線自動重新注入盲點測試，連續 2 次正確才標記為「已掌握」。
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Live Interactive Demo of Homework & Feedback -->
+      <div class="mt-16 bg-slate-800 rounded-3xl border border-slate-700 overflow-hidden shadow-2xl">
+        <div class="px-6 py-4 bg-slate-800/90 border-b border-slate-700 flex flex-wrap items-center justify-between gap-4">
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 rounded-full bg-red-500"></span>
+            <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+            <span class="w-3 h-3 rounded-full bg-green-500"></span>
+            <span class="text-xs font-mono text-slate-400 ml-2">pipeline_execution_sample.log</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="switchPreview('student')" id="tab-btn-student" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-sky-600 text-white transition">
+              👦 學生版回饋
+            </button>
+            <button onclick="switchPreview('parent')" id="tab-btn-parent" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-700 text-slate-300 hover:text-white transition">
+              👨‍👩‍👦 家長版回饋
+            </button>
+            <button onclick="switchPreview('homework')" id="tab-btn-homework" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-700 text-slate-300 hover:text-white transition">
+              📑 三格式作業樣張
+            </button>
+          </div>
+        </div>
+
+        <div class="p-6 md:p-8 font-mono text-xs md:text-sm text-slate-300 leading-relaxed bg-slate-900/90 overflow-x-auto min-h-[260px]">
+          
+          <!-- Tab 1: Student Feedback -->
+          <div id="preview-student" class="space-y-3">
+            <div class="text-sky-400 font-bold text-sm">【👦 課堂速記與隊形心法：柏文會考 A++ 衝刺】</div>
+            <p>1. <span class="text-emerald-400">今日戰果</span>：恭喜通過全民英檢中級初試 172 分與複試雙合格！今日順利推進 Unit 6「名詞的格與代名詞」，全文法重構進度達 6/16 單元！</p>
+            <p>2. <span class="text-amber-400">避坑點提醒</span>：不定代名詞 one vs. the other vs. another 的範圍指涉不要靠直覺猜，先看「母群體是否有指定數量」。有 the 必定代表「剩下全部」！</p>
+            <p>3. <span class="text-purple-400">本週修煉任務</span>：完成雲端作業資料夾內的 Unit 6 綜合測驗卷（40 題），音檔已為你合成好在「音檔/」目錄，通勤時跟讀 2 遍！</p>
+          </div>
+
+          <!-- Tab 2: Parent Feedback -->
+          <div id="preview-parent" class="hidden space-y-3">
+            <div class="text-indigo-400 font-bold text-sm">【👨‍👩‍👦 家長專業教學紀錄與指標分析】</div>
+            <p>• <span class="text-slate-100 font-bold">學員姓名</span>：柏文｜國三｜目標：國中教育會考 A++ 滿級分</p>
+            <p>• <span class="text-slate-100 font-bold">最新實測里程碑</span>：正式取得全民英檢中級合格證書（初試 172 分高分通過），已具備高中畢業與 CEFR B1+ 實戰水平。</p>
+            <p>• <span class="text-slate-100 font-bold">當前課程重心</span>：全套會考 16 單元全文法框架重構。目前進度 38%（6/16 單元）。白板檢討作答掌握度維持在 92% 優良區間。</p>
+            <p>• <span class="text-slate-100 font-bold">作業派發說明</span>：今日課堂之三格式複習卷已同步自動發布至 Google Drive，並將錯題登錄至艾賓浩斯螺旋錯題庫進行定期回測。</p>
+          </div>
+
+          <!-- Tab 3: Homework Sample -->
+          <div id="preview-homework" class="hidden space-y-5">
+            <div>
+              <div class="text-emerald-400 font-bold text-sm">【📑 客製化三格式作業：真實派發樣張預覽（以多益 C1 全真題型為例）】</div>
+              <p class="text-slate-400 text-xs mt-1">每次課後 10 分鐘內自動產出：Word (.docx) ＋ PDF ＋ 高解析 PNG 手機預覽圖 ＋ AI 美語朗讀 MP3 音檔</p>
+            </div>
+
+            <!-- Clickable Homework Thumbnails Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 pt-2">
+              
+              <!-- Page 1: Cover -->
+              <div class="bg-slate-800/90 rounded-xl p-2 border border-slate-700 hover:border-emerald-500/60 transition group cursor-pointer" onclick="openLightbox('images/homework_sample_page_1.png', '作業封面與目標設定 (恩忻 多益 C1 實戰作業)')">
+                <div class="aspect-[3/4] rounded-lg overflow-hidden relative bg-white">
+                  <img src="images/homework_sample_page_1.png" alt="作業封面" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+                  <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-[10px] font-bold">
+                    點擊放大 🔍
+                  </div>
+                </div>
+                <div class="mt-2 text-center">
+                  <span class="text-[10px] text-emerald-400 font-bold block">作業封面與目標</span>
+                  <span class="text-[9px] text-slate-400">學生/目標/日期</span>
+                </div>
+              </div>
+
+              <!-- Page 2: Vocab -->
+              <div class="bg-slate-800/90 rounded-xl p-2 border border-slate-700 hover:border-emerald-500/60 transition group cursor-pointer" onclick="openLightbox('images/homework_sample_page_2.png', 'Part 1: 50 高階商務字彙庫 (含音標、釋義、例句)')">
+                <div class="aspect-[3/4] rounded-lg overflow-hidden relative bg-white">
+                  <img src="images/homework_sample_page_2.png" alt="核心單字庫" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+                  <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-[10px] font-bold">
+                    點擊放大 🔍
+                  </div>
+                </div>
+                <div class="mt-2 text-center">
+                  <span class="text-[10px] text-sky-400 font-bold block">Part 1 核心單字庫</span>
+                  <span class="text-[9px] text-slate-400">50 字/音標/例句</span>
+                </div>
+              </div>
+
+              <!-- Page 7: Vocab Questions -->
+              <div class="bg-slate-800/90 rounded-xl p-2 border border-slate-700 hover:border-emerald-500/60 transition group cursor-pointer" onclick="openLightbox('images/homework_sample_page_7.png', 'Part 1: Vocabulary in Context 語境選字 15 題')">
+                <div class="aspect-[3/4] rounded-lg overflow-hidden relative bg-white">
+                  <img src="images/homework_sample_page_7.png" alt="語境測驗題" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+                  <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-[10px] font-bold">
+                    點擊放大 🔍
+                  </div>
+                </div>
+                <div class="mt-2 text-center">
+                  <span class="text-[10px] text-indigo-400 font-bold block">語境實戰測驗</span>
+                  <span class="text-[9px] text-slate-400">15 題單字語境四選一</span>
+                </div>
+              </div>
+
+              <!-- Page 9: Advanced Grammar -->
+              <div class="bg-slate-800/90 rounded-xl p-2 border border-slate-700 hover:border-emerald-500/60 transition group cursor-pointer" onclick="openLightbox('images/homework_sample_page_9.png', 'Part 2: Advanced Grammar 15 題進階文法焦點')">
+                <div class="aspect-[3/4] rounded-lg overflow-hidden relative bg-white">
+                  <img src="images/homework_sample_page_9.png" alt="進階文法焦點" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+                  <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-[10px] font-bold">
+                    點擊放大 🔍
+                  </div>
+                </div>
+                <div class="mt-2 text-center">
+                  <span class="text-[10px] text-amber-400 font-bold block">進階文法焦點</span>
+                  <span class="text-[9px] text-slate-400">15 題 Subjunctive/倒裝</span>
+                </div>
+              </div>
+
+              <!-- Page 13: Reading Comprehension -->
+              <div class="bg-slate-800/90 rounded-xl p-2 border border-slate-700 hover:border-emerald-500/60 transition group cursor-pointer" onclick="openLightbox('images/homework_sample_page_13.png', 'Part 4: Reading Comprehension 雙篇長篇閱讀理解 (附真聲朗讀 MP3)')">
+                <div class="aspect-[3/4] rounded-lg overflow-hidden relative bg-white">
+                  <img src="images/homework_sample_page_13.png" alt="篇章閱讀理解" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+                  <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-[10px] font-bold">
+                    點擊放大 🔍
+                  </div>
+                </div>
+                <div class="mt-2 text-center">
+                  <span class="text-[10px] text-purple-400 font-bold block">雙篇長篇閱讀</span>
+                  <span class="text-[9px] text-slate-400">350+字/附真聲MP3</span>
+                </div>
+              </div>
+
+              <!-- Page 16: Answer Key -->
+              <div class="bg-slate-800/90 rounded-xl p-2 border border-slate-700 hover:border-emerald-500/60 transition group cursor-pointer" onclick="openLightbox('images/homework_sample_page_16.png', 'Part 5: 參考答案與名師詳解 (全 44 題詳細解題思路)')">
+                <div class="aspect-[3/4] rounded-lg overflow-hidden relative bg-white">
+                  <img src="images/homework_sample_page_16.png" alt="名師詳解" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+                  <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-[10px] font-bold">
+                    點擊放大 🔍
+                  </div>
+                </div>
+                <div class="mt-2 text-center">
+                  <span class="text-[10px] text-emerald-400 font-bold block">名師題題詳解</span>
+                  <span class="text-[9px] text-slate-400">44 題完整解析思路</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Format Specs List -->
+            <div class="pl-4 border-l-2 border-emerald-500/50 space-y-1.5 text-slate-300 text-xs pt-1">
+              <p>• <strong>Part 1: 50 Words and Phrases</strong> 含 KK 音標、詞性、字源、中譯、商務情境例句</p>
+              <p>• <strong>Part 2: Complete Test Paper (44 題全真測驗)</strong>：單字語境 15 題 ＋ 進階文法 15 題 ＋ 篇章克漏字 6 題 ＋ 雙篇長篇閱讀 8 題</p>
+              <p>• <strong>Part 3: Answer Key & In-Depth Explanations</strong> 名師解析與思路拆解，直擊盲點</p>
+              <p>• <strong>Part 4: AI Native Speaker Audio (MP3)</strong> 篇章閱讀真聲朗讀，隨身聽力跟讀訓練</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Dashboard Demo Section -->
+  <section id="dashboard-demo" class="py-24 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold tracking-widest text-indigo-600 uppercase bg-indigo-50 px-3 py-1 rounded-full border border-indigo-100">Live Dashboard Experience</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-3">
+          學生長期能力儀表板：讓學習成長 100% 透明量化
+        </h2>
+        <p class="text-slate-600 text-sm mt-3">
+          告別「感覺有進步」的模糊臆測。全體學生六維能力統一錨定 <strong>CEFR C2（母語頂尖級）</strong> 參照基準，直接調閱白板真實筆跡、作答數據與歷次走勢。
+        </p>
+      </div>
+
+      <!-- Live Interactive Dashboard Container -->
+      <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-xl">
+        
+        <!-- Student Selector Tabs -->
+        <div class="flex items-center justify-between flex-wrap gap-4 border-b border-slate-200 pb-5">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">切換學員檢視實時檔案：</span>
+            <div class="flex flex-wrap gap-2 mt-2">
+              <button onclick="loadDashboardStudent('bowen')" id="dash-btn-bowen" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-white shadow-sm transition">
+                柏文 (國中會考 ➔ A++)
+              </button>
+              <button onclick="loadDashboardStudent('yuying')" id="dash-btn-yuying" class="px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-600 hover:text-slate-900 border border-slate-200 transition">
+                育穎 (多益 550~600+ 扎根)
+              </button>
+              <button onclick="loadDashboardStudent('zien')" id="dash-btn-zien" class="px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-600 hover:text-slate-900 border border-slate-200 transition">
+                子恩 (雅思 7.0+)
+              </button>
+              <button onclick="loadDashboardStudent('joseph')" id="dash-btn-joseph" class="px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-600 hover:text-slate-900 border border-slate-200 transition">
+                Joseph (高中段考 90+)
+              </button>
+            </div>
+          </div>
+
+          <div class="text-right">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-xs font-semibold">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span> 數據實時連動中
+            </span>
+          </div>
+        </div>
+
+        <!-- 4 Top Highlight Metric Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+          <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+            <span class="text-xs text-slate-500 font-medium">當前階段 / 目標</span>
+            <div class="text-lg font-bold text-sky-600 mt-1" id="d-target">會考 A++ 滿級分</div>
+            <div class="text-xs text-slate-400 mt-0.5" id="d-target-sub">已通過英檢中級 (172分)</div>
+          </div>
+          <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+            <span class="text-xs text-slate-500 font-medium">最新實力落點 / 進度</span>
+            <div class="text-lg font-bold text-emerald-600 mt-1" id="d-score">文法複習 6/16 單元</div>
+            <div class="text-xs text-slate-400 mt-0.5" id="d-score-sub">Unit 6 名詞的格與代名詞</div>
+          </div>
+          <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+            <span class="text-xs text-slate-500 font-medium">白板筆跡與作答軌跡</span>
+            <div class="text-lg font-bold text-purple-600 mt-1" id="d-notes">620 筆筆跡 / 6 回試卷</div>
+            <div class="text-xs text-slate-400 mt-0.5" id="d-notes-sub">已鎖定 8 個高頻盲點</div>
+          </div>
+          <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+            <span class="text-xs text-slate-500 font-medium">作業掌握度 (雙軌核實)</span>
+            <div class="text-lg font-bold text-amber-500 mt-1" id="d-hw">92% <span class="text-xs font-normal text-amber-600">優良</span></div>
+            <div class="text-xs text-slate-400 mt-0.5" id="d-hw-sub">Notion 已全數繳交 (2/2)</div>
+          </div>
+        </div>
+
+        <!-- Radar Chart + Insights Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+          
+          <!-- Radar Chart (5 cols) -->
+          <div class="lg:col-span-5 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between">
+                <h4 class="font-bold text-slate-900 text-sm">六大核心能力雷達分析</h4>
+                <span class="text-[11px] font-semibold text-sky-600 bg-sky-50 px-2 py-0.5 rounded">CEFR C2 錨定</span>
+              </div>
+              <p class="text-[11px] text-slate-400 mt-1">外環 100 分 = CEFR C2 母語級流利度</p>
+            </div>
+
+            <!-- SVG Radar -->
+            <div class="my-4 flex items-center justify-center">
+              <svg class="w-64 h-64" viewBox="-120 -120 240 240">
+                <!-- Background Web Rings -->
+                <polygon points="0,-100 86.6,-50 86.6,50 0,100 -86.6,50 -86.6,-50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+                <polygon points="0,-75 64.95,-37.5 64.95,37.5 0,75 -64.95,37.5 -64.95,-37.5" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+                <polygon points="0,-50 43.3,-25 43.3,25 0,50 -43.3,25 -43.3,-25" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+                <polygon points="0,-25 21.65,-12.5 21.65,12.5 0,25 -21.65,12.5 -21.65,-12.5" fill="none" stroke="#f1f5f9" stroke-width="1"/>
+
+                <!-- Axes -->
+                <line x1="0" y1="0" x2="0" y2="-100" stroke="#cbd5e1" stroke-width="1"/>
+                <line x1="0" y1="0" x2="86.6" y2="-50" stroke="#cbd5e1" stroke-width="1"/>
+                <line x1="0" y1="0" x2="86.6" y2="50" stroke="#cbd5e1" stroke-width="1"/>
+                <line x1="0" y1="0" x2="0" y2="100" stroke="#cbd5e1" stroke-width="1"/>
+                <line x1="0" y1="0" x2="-86.6" y2="50" stroke="#cbd5e1" stroke-width="1"/>
+                <line x1="0" y1="0" x2="-86.6" y2="-50" stroke="#cbd5e1" stroke-width="1"/>
+
+                <!-- Dynamic Polygon -->
+                <polygon id="d-radar-poly" class="radar-polygon fill-sky-500/25 stroke-sky-600" stroke-width="2.5"
+                         points="0,-58 52,-30 59,34 0,62 -56,33 -48,-28"/>
+
+                <!-- Axis Labels -->
+                <text x="0" y="-108" text-anchor="middle" class="fill-slate-500 text-[10px] font-semibold">詞彙深度</text>
+                <text x="96" y="-52" text-anchor="start" class="fill-slate-500 text-[10px] font-semibold">文法結構</text>
+                <text x="96" y="55" text-anchor="start" class="fill-slate-500 text-[10px] font-semibold">語境推論</text>
+                <text x="0" y="115" text-anchor="middle" class="fill-slate-500 text-[10px] font-semibold">長篇耐力</text>
+                <text x="-96" y="55" text-anchor="end" class="fill-slate-500 text-[10px] font-semibold">細節查核</text>
+                <text x="-96" y="-52" text-anchor="end" class="fill-slate-500 text-[10px] font-semibold">答題配速</text>
+              </svg>
+            </div>
+
+            <div class="grid grid-cols-3 gap-2 pt-3 border-t border-slate-100 text-center text-[11px]">
+              <div><span class="text-slate-400 block">最強項</span><span class="font-bold text-emerald-600" id="d-sub-1">細節查核: 72</span></div>
+              <div><span class="text-slate-400 block">穩健項</span><span class="font-bold text-sky-600" id="d-sub-2">文法架構: 68</span></div>
+              <div><span class="text-slate-400 block">待突破</span><span class="font-bold text-amber-500" id="d-sub-3">長篇耐力: 60</span></div>
+            </div>
+          </div>
+
+          <!-- Right Details: Trend & Weakness Tags (7 cols) -->
+          <div class="lg:col-span-7 space-y-4">
+            
+            <!-- Pedagogical Analysis Card -->
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+              <h4 class="font-bold text-slate-900 text-sm mb-2 flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-sky-500"></span>
+                名師深度診斷與指導重點
+              </h4>
+              <p class="text-xs text-slate-600 leading-relaxed" id="d-analysis">
+                柏文已正式通過全民英檢中級（初試 172 分、複試雙合格），具備 CEFR B1+ / 高中畢業程度之英文實戰力；目前正全力重構國中全文法 16 單元。白板題目答題流暢，下階段將導入長篇會考雙篇閱讀題型提速。
+              </p>
+            </div>
+
+            <!-- Weakness Tags Cloud -->
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+              <h4 class="font-bold text-slate-900 text-sm mb-2">高頻盲點標籤（已排入螺旋重測）</h4>
+              <div class="flex flex-wrap gap-2" id="d-tags">
+                <span class="px-2.5 py-1 rounded-lg bg-red-50 text-red-600 border border-red-100 text-xs font-medium">不定代名詞範圍限制</span>
+                <span class="px-2.5 py-1 rounded-lg bg-amber-50 text-amber-600 border border-amber-100 text-xs font-medium">關係代名詞省略條件</span>
+                <span class="px-2.5 py-1 rounded-lg bg-sky-50 text-sky-600 border border-sky-100 text-xs font-medium">使役動詞被動受詞補語</span>
+                <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-600 border border-emerald-100 text-xs font-medium">✔ 完成式持續與經驗辨析 (已掌握)</span>
+              </div>
+            </div>
+
+            <!-- Parent Real-Time Notification Message -->
+            <div class="bg-gradient-to-r from-sky-50 to-indigo-50 p-5 rounded-2xl border border-sky-100">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-sky-600 text-white flex items-center justify-center font-bold text-xs shrink-0">
+                  AI
+                </div>
+                <div>
+                  <span class="text-xs font-bold text-sky-900 block">最近一期家長通知聯動簡報</span>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed" id="d-parent-msg">
+                    「柏文在文法 Unit 6 的觀念掌握度極佳，隨堂測驗答對率達 93%。本次指派的課後作業包含 40 個會考核心單字與全真題組，音檔已備妥，請提醒孩子於週日前完成複習。」
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Handout Showcase: The Curriculum Operating Room -->
+  <section id="curriculum" class="py-24 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold tracking-widest text-emerald-600 uppercase bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100">Curriculum Manifesto</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-3">
+          自編講義「微創手術室」：從均標到頂標的破分階梯
+        </h2>
+        <p class="text-slate-600 text-sm mt-3">
+          以《學測英文作文破分階梯：全 15 單元 A4 黃金四頁版》為例，揭示如何以「認知負荷最小化」與「名詞化思辨」，帶領學生完成思維躍遷。
+        </p>
+      </div>
+
+      <!-- Surgery Comparison Card (Bento Style) -->
+      <div class="bg-white rounded-3xl border border-slate-200 p-6 md:p-10 shadow-lg space-y-8">
+        
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-6">
+          <div>
+            <span class="text-xs font-bold text-sky-600 uppercase tracking-wider">Unit 01 實戰手術室</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1">112 學測 Emoji 考題：從表面直覺到媒介哲學思辨</h3>
+          </div>
+          <span class="inline-flex items-center px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-semibold">
+            雙跨頁同位句微創對照
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- 11 分 均標範本 -->
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold px-2 py-0.5 rounded bg-slate-200 text-slate-700">11 分 (均標)</span>
+              <span class="text-xs text-slate-400">停留在日常直覺</span>
+            </div>
+            <div class="text-xs text-slate-500 font-mono italic mb-3">"I like to use the crying-laughing emoji because it is very funny and convenient..."</div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              <strong class="text-slate-800">盲點剖析</strong>：依賴廉價形容詞（funny, convenient），文章淪為流水帳，無法提煉日常現象背後的抽象本質。
+            </p>
+          </div>
+
+          <!-- 14.5 分 前標升級 -->
+          <div class="p-5 rounded-2xl bg-sky-50/60 border border-sky-100">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold px-2 py-0.5 rounded bg-sky-200 text-sky-800">14.5 分 (前標)</span>
+              <span class="text-xs text-sky-600">加入邏輯連接詞</span>
+            </div>
+            <div class="text-xs text-slate-700 font-mono italic mb-3">"Using emojis allows me to express my genuine emotions instantly without typing long words..."</div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              <strong class="text-slate-800">進階關鍵</strong>：句型結構改善，但依然缺乏「名詞化概念命題」，無法跨過 15 分的頂標門檻。
+            </p>
+          </div>
+
+          <!-- 18.5 分 頂標神作 -->
+          <div class="p-5 rounded-2xl bg-gradient-to-br from-indigo-50 to-purple-50 border border-indigo-200 shadow-sm">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold px-2 py-0.5 rounded bg-indigo-600 text-white">18.5 分 (頂標神作)</span>
+              <span class="text-xs text-indigo-600 font-semibold">哲學思辨對位</span>
+            </div>
+            <div class="text-xs text-indigo-950 font-mono font-medium mb-3">
+              "It <span class="bg-indigo-200/60 px-1 rounded font-bold">encapsulates</span> an explosive burst of humor that cumbersome prose could scarcely convey in an instant..."
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-indigo-900">破分心法</strong>：動用 <em>encapsulate</em>（語源自拉丁文小膠囊，封存高密度張力），從「形容詞堆砌」躍升為「抽象名詞命題」！
+            </p>
+          </div>
+
+        </div>
+
+        <!-- 4-Page Full Handbook Chapter Preview (Interactive Gallery) -->
+        <div class="pt-8 border-t border-slate-100">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
+            <div>
+              <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">A4 黃金四頁版 · 樣章完整公開</span>
+              <h4 class="text-lg sm:text-xl font-extrabold text-slate-900 mt-0.5">
+                《學測英文作文破分階梯》Unit 01 全四頁真實講義逐頁預覽
+              </h4>
+            </div>
+            <span class="text-xs text-slate-500 font-medium bg-slate-100 px-3 py-1 rounded-full self-start sm:self-auto">
+              💡 點擊任一頁面即可開啟高清全頁閱讀
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            
+            <!-- Page 1 -->
+            <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 hover:border-indigo-500/60 hover:shadow-lg transition duration-300 group cursor-pointer flex flex-col justify-between" onclick="openLightbox('images/handout_emoji_page_1.png', '《學測英文作文破分階梯》Page 1/4｜審題直覺與破題字庫')">
+              <div>
+                <div class="aspect-[3/4.2] rounded-xl overflow-hidden relative bg-white border border-slate-200 shadow-xs">
+                  <img src="images/handout_emoji_page_1.png" alt="Page 1 審題直覺與破題字庫" class="w-full h-full object-cover object-top group-hover:scale-103 transition duration-300">
+                  <div class="absolute inset-0 bg-slate-900/35 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5 backdrop-blur-xs">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                    點擊放大閱讀
+                  </div>
+                  <span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-slate-900/80 text-white text-[10px] font-bold font-mono">
+                    Page 1 / 4
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <h5 class="text-xs font-bold text-slate-900 group-hover:text-indigo-600 transition">審題直覺與破題字庫</h5>
+                  <p class="text-[11px] text-slate-500 mt-1 leading-relaxed">
+                    動筆前 30 秒防呆雷達、圖表表情符號情緒分類、初中階保底萬用句架。
+                  </p>
+                </div>
+              </div>
+              <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-indigo-600 font-bold">
+                <span>保底 12~14 分盤</span>
+                <span>閱讀全頁 ➔</span>
+              </div>
+            </div>
+
+            <!-- Page 2 -->
+            <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 hover:border-indigo-500/60 hover:shadow-lg transition duration-300 group cursor-pointer flex flex-col justify-between" onclick="openLightbox('images/handout_emoji_page_2.png', '《學測英文作文破分階梯》Page 2/4（跨頁左頁）｜思想深度矩陣 ＆ Part A 範文橫向對照')">
+              <div>
+                <div class="aspect-[3/4.2] rounded-xl overflow-hidden relative bg-white border border-slate-200 shadow-xs">
+                  <img src="images/handout_emoji_page_2.png" alt="Page 2 思想深度與均標前標對照" class="w-full h-full object-cover object-top group-hover:scale-103 transition duration-300">
+                  <div class="absolute inset-0 bg-slate-900/35 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5 backdrop-blur-xs">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                    點擊放大閱讀
+                  </div>
+                  <span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-sky-700/80 text-white text-[10px] font-bold font-mono">
+                    Page 2 / 4 (左頁)
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <h5 class="text-xs font-bold text-slate-900 group-hover:text-indigo-600 transition">思想深度矩陣 ＆ 對照 Part A</h5>
+                  <p class="text-[11px] text-slate-500 mt-1 leading-relaxed">
+                    平庸直覺 vs 頂標破局；11 分均標 vs 14.5 分前標範文及逐句結構分析。
+                  </p>
+                </div>
+              </div>
+              <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-sky-600 font-bold">
+                <span>均標 ➔ 前標手術</span>
+                <span>閱讀全頁 ➔</span>
+              </div>
+            </div>
+
+            <!-- Page 3 -->
+            <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 hover:border-indigo-500/60 hover:shadow-lg transition duration-300 group cursor-pointer flex flex-col justify-between" onclick="openLightbox('images/handout_emoji_page_3.png', '《學測英文作文破分階梯》Page 3/4（跨頁右頁）｜頂標神作範文 18.5 分 ＆ 升級改造手術室')">
+              <div>
+                <div class="aspect-[3/4.2] rounded-xl overflow-hidden relative bg-white border border-slate-200 shadow-xs">
+                  <img src="images/handout_emoji_page_3.png" alt="Page 3 頂標神作與升級手術室" class="w-full h-full object-cover object-top group-hover:scale-103 transition duration-300">
+                  <div class="absolute inset-0 bg-slate-900/35 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5 backdrop-blur-xs">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                    點擊放大閱讀
+                  </div>
+                  <span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-indigo-700/80 text-white text-[10px] font-bold font-mono">
+                    Page 3 / 4 (右頁)
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <h5 class="text-xs font-bold text-slate-900 group-hover:text-indigo-600 transition">Level 3 頂標神作 ＆ 手術室</h5>
+                  <p class="text-[11px] text-slate-500 mt-1 leading-relaxed">
+                    18.5 分神作剖析、雙面刃轉折句、主刀教練 3 大句型萬用遷移公式。
+                  </p>
+                </div>
+              </div>
+              <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-indigo-600 font-bold">
+                <span>18.5 分頂標神作</span>
+                <span>閱讀全頁 ➔</span>
+              </div>
+            </div>
+
+            <!-- Page 4 -->
+            <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 hover:border-indigo-500/60 hover:shadow-lg transition duration-300 group cursor-pointer flex flex-col justify-between" onclick="openLightbox('images/handout_emoji_page_4.png', '《學測英文作文破分階梯》Page 4/4｜24 組高頻搭配詞庫 ＆ 實戰仿寫區')">
+              <div>
+                <div class="aspect-[3/4.2] rounded-xl overflow-hidden relative bg-white border border-slate-200 shadow-xs">
+                  <img src="images/handout_emoji_page_4.png" alt="Page 4 搭配詞庫與實戰仿寫" class="w-full h-full object-cover object-top group-hover:scale-103 transition duration-300">
+                  <div class="absolute inset-0 bg-slate-900/35 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5 backdrop-blur-xs">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                    點擊放大閱讀
+                  </div>
+                  <span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-purple-700/80 text-white text-[10px] font-bold font-mono">
+                    Page 4 / 4
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <h5 class="text-xs font-bold text-slate-900 group-hover:text-indigo-600 transition">24 組高頻搭配詞 ＆ 鷹架練筆</h5>
+                  <p class="text-[11px] text-slate-500 mt-1 leading-relaxed">
+                    主題搭配詞勾選表、三大任務手寫仿寫鷹架、交卷前 60 秒自檢雷達。
+                  </p>
+                </div>
+              </div>
+              <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-purple-600 font-bold">
+                <span>實戰鷹架仿寫</span>
+                <span>閱讀全頁 ➔</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Official Certificates & Credentials Section (NEW: Real Images Embedded) -->
+  <section id="certificates" class="py-24 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold tracking-widest text-sky-600 uppercase bg-sky-50 px-3 py-1 rounded-full border border-sky-100">Official Credentials</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-3">
+          權威專業證照與官方實測成績
+        </h2>
+        <p class="text-slate-600 text-sm mt-3">
+          不憑空吹噓。以美國亞利桑那州立大學（ASU）國際 TESOL 專業證照，以及 ETS 新制多益 960 分金色證書，為每一次教學提供最高規格的專業背書。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+        
+        <!-- Certificate Card 1: ASU TESOL -->
+        <div class="bg-slate-50 rounded-3xl border border-slate-200/90 p-6 sm:p-8 flex flex-col justify-between hover:shadow-xl transition duration-300">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-bold">
+                國際專業英語教學證照
+              </span>
+              <span class="text-xs text-slate-400 font-mono">ASU Global Launch</span>
+            </div>
+
+            <!-- Image Container with Zoom Overlay -->
+            <div class="relative rounded-2xl overflow-hidden border border-slate-200 bg-white group cursor-pointer shadow-sm" onclick="openLightbox('images/cert_asu_tesol.png', 'Arizona State University TESOL 國際專業證照 (8 Courses Professional Certificate)')">
+              <img src="images/cert_asu_tesol.png" alt="Arizona State University TESOL 國際專業證照" class="w-full h-auto object-cover group-hover:scale-102 transition duration-300">
+              <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-2 backdrop-blur-xs">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                點擊放大檢視官方證書原圖
+              </div>
+            </div>
+
+            <div class="mt-6 space-y-2">
+              <h3 class="text-xl font-bold text-slate-900">Arizona State University — TESOL Professional Certificate</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                由全美頂尖的亞利桑那州立大學（ASU）頒發，完成全套 8 門專業專門課程（涵蓋二語習得理論、教案與評量設計、科技融入教學 Technology-Enriched Teaching 等）。
+              </p>
+            </div>
+          </div>
+
+          <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between text-xs">
+            <span class="text-slate-500 font-mono">核驗代碼：O28Z7R2NPHRC</span>
+            <button onclick="openLightbox('images/cert_asu_tesol.png', 'ASU TESOL 證書')" class="text-sky-600 font-bold hover:underline">
+              放大檢視 ➔
+            </button>
+          </div>
+        </div>
+
+        <!-- Certificate Card 2: TOEIC 960 Gold -->
+        <div class="bg-slate-50 rounded-3xl border border-slate-200/90 p-6 sm:p-8 flex flex-col justify-between hover:shadow-xl transition duration-300">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-700 text-xs font-bold">
+                ETS 官方新制多益金色證書
+              </span>
+              <span class="text-xs text-slate-400 font-mono">Score: 960 / 990</span>
+            </div>
+
+            <!-- Image Container with Zoom Overlay -->
+            <div class="relative rounded-2xl overflow-hidden border border-slate-200 bg-white group cursor-pointer shadow-sm" onclick="openLightbox('images/cert_toeic_960.jpg', 'ETS 新制多益官方成績單 (總分 960 分 / 聽力 475 / 閱讀 485)')">
+              <img src="images/cert_toeic_960.jpg" alt="ETS 新制多益 960 分官方成績單" class="w-full h-auto object-cover group-hover:scale-102 transition duration-300">
+              <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-2 backdrop-blur-xs">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                點擊放大檢視成績單原圖
+              </div>
+            </div>
+
+            <div class="mt-6 space-y-2">
+              <h3 class="text-xl font-bold text-slate-900">ETS TOEIC Listening & Reading — 960 分金色證書</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                聽力 475 分、閱讀 485 分，總分 960 分頂尖表現。證明具備母語級長篇學術與商務閱讀理解速度，以及對細微連音與語境推論的敏銳掌握。
+              </p>
+            </div>
+          </div>
+
+          <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between text-xs">
+            <span class="text-slate-500 font-mono">測驗日期：2025/03/30 ｜ 流水號：25435447</span>
+            <button onclick="openLightbox('images/cert_toeic_960.jpg', '多益 960 成績單')" class="text-amber-600 font-bold hover:underline">
+              放大檢視 ➔
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Complete Course Offerings -->
+  <section class="py-24 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold tracking-widest text-sky-600 uppercase bg-sky-50 px-3 py-1 rounded-full border border-sky-100">Customized Programs</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-3">
+          全方位升學與考證客製化專案
+        </h2>
+        <p class="text-slate-600 text-sm mt-3">
+          針對不同學習階段與檢定目標，導入專屬教材庫、白板專案與 AI 自動化練習體系。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Course 1 -->
+        <div class="p-8 rounded-3xl bg-white border border-slate-200 flex flex-col justify-between hover:border-sky-500 transition shadow-sm">
+          <div>
+            <span class="text-xs font-bold text-sky-600 uppercase tracking-wider">國中教育會考</span>
+            <h3 class="text-2xl font-bold text-slate-900 mt-2 mb-3">會考全文法重構衝刺班</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              專為國二、國三考生設計。打破零碎背誦，以 16 單元完整重構國中全文法體系，搭配歷屆真題與錯題庫螺旋回測，目標直取 A++ 滿級分。
+            </p>
+            <ul class="space-y-2.5 text-xs text-slate-700 font-medium">
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> 16 單元自編文法與考題 PDF</li>
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> 40 題全套克漏字與篇章閱讀週作業</li>
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> 全民英檢中級初/複試銜接培訓</li>
+            </ul>
+          </div>
+          <div class="pt-8">
+            <a href="#booking" class="block w-full text-center py-3 rounded-xl bg-slate-900 hover:bg-sky-600 text-white font-semibold text-sm transition">了解課程詳情</a>
+          </div>
+        </div>
+
+        <!-- Course 2 (Featured) -->
+        <div class="p-8 rounded-3xl bg-gradient-to-b from-sky-500/5 to-indigo-500/5 border-2 border-sky-500 relative flex flex-col justify-between shadow-xl">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-gradient-to-r from-sky-600 to-indigo-600 text-white text-[11px] font-bold tracking-wide uppercase">
+            熱門首選 · 名額稀缺
+          </div>
+          <div>
+            <span class="text-xs font-bold text-sky-600 uppercase tracking-wider">高中學測 / 分科</span>
+            <h3 class="text-2xl font-bold text-slate-900 mt-2 mb-3">學測英文作文破分階梯</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              從均標到頂標的對照升級指南。採用獨家「黃金四頁微創手術」講義，針對圖表題、漫畫題、書信與議題論述，進行句構重組與思維範式轉移。
+            </p>
+            <ul class="space-y-2.5 text-xs text-slate-700 font-medium">
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-sky-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> 全 15 單元 A4 對照手術室自編講義</li>
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-sky-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> 名詞化命題與高分抽象對位心法</li>
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-sky-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> 課堂即時批改 × AI 錯題回溯重測</li>
+            </ul>
+          </div>
+          <div class="pt-8">
+            <a href="#booking" class="block w-full text-center py-3 rounded-xl bg-gradient-to-r from-sky-600 to-indigo-600 hover:from-sky-500 hover:to-indigo-500 text-white font-bold text-sm shadow-md transition">預約學測作文試教診斷</a>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="p-8 rounded-3xl bg-white border border-slate-200 flex flex-col justify-between hover:border-sky-500 transition shadow-sm">
+          <div>
+            <span class="text-xs font-bold text-sky-600 uppercase tracking-wider">國際檢定認證</span>
+            <h3 class="text-2xl font-bold text-slate-900 mt-2 mb-3">多益金證 & 雅思高分班</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              多益 850+ 藍金證書與雅思 7.0+ 跨學科精讀。精選行為經濟學、認知科學與商業管理原著，鍛鍊長篇耐力與細節比對，杜絕盲目刷題。
+            </p>
+            <ul class="space-y-2.5 text-xs text-slate-700 font-medium">
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> 多益 Part 5~7 核心文法焦點與雙篇拆解</li>
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> 雅思跨學科學術詞彙庫 (AWL 40+ 字/週)</li>
+              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> 每週產出真聲母語朗讀音檔加練聽力</li>
+            </ul>
+          </div>
+          <div class="pt-8">
+            <a href="#booking" class="block w-full text-center py-3 rounded-xl bg-slate-900 hover:bg-sky-600 text-white font-semibold text-sm transition">了解課程詳情</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Student Success & Testimonials (Real Parent Screenshots) -->
+  <section id="testimonials" class="py-24 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold tracking-widest text-emerald-600 uppercase bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100">Student Stories</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-3">
+          真實學習軌跡與成效見證
+        </h2>
+        <p class="text-slate-600 text-sm mt-3">
+          不誇大速成，用真實的白板筆記、檢定證照與家長真實回饋說話。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Story 1: Rita's Parent (With Real Screenshot) -->
+        <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-1 text-amber-400">★★★★★</div>
+              <span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-700 text-[11px] font-bold">校排前5名</span>
+            </div>
+            
+            <p class="text-sm text-slate-700 leading-relaxed italic mb-4">
+              「他這一次全班第3、校排第5！英文這次同學都考不好，他考得還不錯，英文考了88分！我有感覺到他慢慢變強了！」
+            </p>
+
+            <!-- Embedded Thumbnail of LINE Chat -->
+            <div class="relative rounded-2xl overflow-hidden border border-slate-200 bg-white group cursor-pointer my-4" onclick="openLightbox('images/feedback_rita.jpg', 'Rita 家長 LINE 真實成績回饋截圖')">
+              <img src="images/feedback_rita.jpg" alt="Rita 家長回饋截圖" class="w-full h-36 object-cover object-top group-hover:scale-105 transition duration-300">
+              <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1 backdrop-blur-xs">
+                <span>點擊放大檢視截圖</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
+            <div class="w-10 h-10 rounded-full bg-sky-100 text-sky-600 font-bold flex items-center justify-center text-sm">
+              R
+            </div>
+            <div>
+              <div class="text-sm font-bold text-slate-900">Rita 家長</div>
+              <div class="text-xs text-slate-500">國中生家長 · 段考全班第3、校排第5</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 2: Sicen & Cenxuan (With Real Screenshot) -->
+        <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-1 text-amber-400">★★★★★</div>
+              <span class="px-2.5 py-0.5 rounded-full bg-indigo-100 text-indigo-700 text-[11px] font-bold">出國翻譯大使</span>
+            </div>
+            
+            <p class="text-sm text-slate-700 leading-relaxed italic mb-4">
+              「本次出國我們岑岑寶貝成為全團翻譯大使！幫忙跟店家商討盧好久，讓阿姨當她是女神一樣捧！感謝老師讓她神速進步！在日本都在當小小翻譯！」
+            </p>
+
+            <!-- Embedded Thumbnail of LINE Chat -->
+            <div class="relative rounded-2xl overflow-hidden border border-slate-200 bg-white group cursor-pointer my-4" onclick="openLightbox('images/feedback_cenxuan.jpg', '岑瑄家長出國旅遊英語真實回饋截圖')">
+              <img src="images/feedback_cenxuan.jpg" alt="岑瑄家長出國翻譯大使回饋" class="w-full h-36 object-cover object-top group-hover:scale-105 transition duration-300">
+              <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1 backdrop-blur-xs">
+                <span>點擊放大檢視截圖</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
+            <div class="w-10 h-10 rounded-full bg-indigo-100 text-indigo-600 font-bold flex items-center justify-center text-sm">
+              岑
+            </div>
+            <div>
+              <div class="text-sm font-bold text-slate-900">岑瑄 (思岑) 家長</div>
+              <div class="text-xs text-slate-500">出國實戰翻譯 · 口語與聽力躍升</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 3: Yuying's Parent (With Real Screenshot) -->
+        <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-1 text-amber-400">★★★★★</div>
+              <span class="px-2.5 py-0.5 rounded-full bg-teal-100 text-teal-700 text-[11px] font-bold">扎根有成 · 進步很多</span>
+            </div>
+            
+            <p class="text-sm text-slate-700 leading-relaxed italic mb-4">
+              「育穎他答題的速度想比較多、可能怕錯誤、所以比較慢，在麻煩老師教導。老師：好，基礎實力上來就會逐漸順起來。家長：對啊、他英文有進步很多了。很謝謝你對他的用心！」
+            </p>
+
+            <!-- Embedded Thumbnail of LINE Chat -->
+            <div class="relative rounded-2xl overflow-hidden border border-slate-200 bg-white group cursor-pointer my-4" onclick="openLightbox('images/feedback_yuying.png', '育穎家長 LINE 真實進步回饋截圖')">
+              <img src="images/feedback_yuying.png" alt="育穎家長回饋截圖" class="w-full h-36 object-cover object-top group-hover:scale-105 transition duration-300">
+              <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1 backdrop-blur-xs">
+                <span>點擊放大檢視截圖</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
+            <div class="w-10 h-10 rounded-full bg-teal-100 text-teal-600 font-bold flex items-center justify-center text-sm">
+              穎
+            </div>
+            <div>
+              <div class="text-sm font-bold text-slate-900">育穎家長</div>
+              <div class="text-xs text-slate-500">多益扎根 · 家長感心回饋</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 4: Bowen (GEPT Double Pass + CAP A++) -->
+        <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-1 text-amber-400">★★★★★</div>
+              <span class="px-2.5 py-0.5 rounded-full bg-sky-100 text-sky-700 text-[11px] font-bold">英檢中級雙合格</span>
+            </div>
+            
+            <p class="text-sm text-slate-700 leading-relaxed italic mb-4">
+              「過去在學校文法總是死背硬記，遇到長篇閱讀就很慌。跟廷暉老師上課後，白板上的圖解文法讓我很清楚看到句子的主幹！今年順利以初試 172 分通過全民英檢中級，複試也雙合格，會考文法重構後更有把握拿 A++ 了！」
+            </p>
+
+            <div class="p-4 rounded-2xl bg-white border border-slate-200 space-y-2 text-xs text-slate-600 my-4">
+              <div class="flex items-center justify-between">
+                <span>英檢中級初試</span>
+                <span class="font-bold text-sky-600">172 分高分通過</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span>英檢中級複試</span>
+                <span class="font-bold text-emerald-600">雙合格 (口說+寫作)</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span>會考全文法重構</span>
+                <span class="font-bold text-indigo-600">進度 6/16 單元</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
+            <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-600 font-bold flex items-center justify-center text-sm">
+              柏
+            </div>
+            <div>
+              <div class="text-sm font-bold text-slate-900">柏文同學</div>
+              <div class="text-xs text-slate-500">國中教育會考 · 全民英檢中級實測雙合格</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Ting Section (Real Photo Embedded) -->
+  <section id="about" class="py-24 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Real Photo Card (5 cols) -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="relative">
+            <div class="w-full rounded-3xl bg-gradient-to-tr from-sky-500 via-indigo-600 to-purple-600 p-1 shadow-2xl relative overflow-hidden group">
+              <div class="w-full bg-slate-900 rounded-[22px] overflow-hidden relative">
+                
+                <!-- Real Teacher Profile Photo -->
+                <div class="aspect-[4/5] w-full overflow-hidden relative bg-slate-800 cursor-pointer group/img" onclick="openLightbox('images/profile_headshot.jpg', '鄭廷暉 老師形象照')">
+                  <img src="images/profile_headshot.jpg" alt="鄭廷暉 老師形象照" class="w-full h-full object-cover object-[center_25%] group-hover/img:scale-105 transition duration-500">
+                  <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                  
+                  <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-emerald-500/80 backdrop-blur-md text-white text-xs font-semibold flex items-center gap-1.5 shadow-sm">
+                    <span class="w-2 h-2 rounded-full bg-white animate-ping"></span>
+                    開放新學期預約試教
+                  </div>
+                </div>
+
+                <!-- Text Overlay at Bottom -->
+                <div class="p-6 pt-2 text-white space-y-2 relative">
+                  <div>
+                    <h3 class="text-2xl font-black">鄭廷暉 Ting-Huei Cheng</h3>
+                    <p class="text-sky-300 text-xs font-semibold mt-0.5">英語教學專家 × 認知心理與 AI 系統架構師</p>
+                  </div>
+
+                  <p class="text-xs text-slate-300 leading-relaxed pt-2">
+                    國立臺灣師範大學成人與繼續教育學系（師大教育專業出身），高中就讀臺北市立士林高商應用外語科。大學指定科目考試（指考）英文全國 PR98，高二即考取多益金色證書。具備 ASU 國際 TESOL 專業認證、10 年家教與教會隨行口譯經驗。
+                  </p>
+
+                  <div class="pt-4 border-t border-slate-800 flex items-center justify-between text-[11px] text-slate-400">
+                    <span>📍 台灣嘉義 / 全球線上</span>
+                    <span>🎓 師大教育學系 · 指考 PR98 · 多益 960</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Story & Philosophy (7 cols) -->
+        <div class="lg:col-span-7 space-y-6">
+          <span class="text-xs font-bold tracking-widest text-sky-600 uppercase bg-sky-50 px-3 py-1 rounded-full border border-sky-100">
+            Instructor Story
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+            「我也曾是傳統填鴨體制下的受害者，直到我明白：英語不該是一門咬牙苦撐的學科，而是你探索世界的延伸器官。」
+          </h2>
+
+          <div class="space-y-4 text-slate-600 text-sm leading-relaxed">
+            <p>
+              在進入大學以前，我也曾淹沒在無休止的文法選擇題與單字死背之中。即便在升學考試中取得頂尖成績，真正接觸到原汁原味的真實英語世界時，我才赫然驚覺傳統教育的脫節與枯竭。
+            </p>
+            <p>
+              那成了我開啟家教生涯的契機。從大一開始執教至今 10 年，我鑽研教育心理學的「認知負荷理論」、語言學的「語源與語音感知」，並將近年爆發的生成式 AI 與自動化工程徹底融入教學交付。
+            </p>
+            <p>
+              我不把學生逼進題海咬牙苦撐，而是透過 Figma 白板進行視覺化透視、藉由自編的雙跨頁作文手術室重構大腦神經網絡，並用全自動 AI 系統在下課後十秒無縫遞送專屬音檔與複習作業。
+            </p>
+            <p class="font-semibold text-slate-800">
+              對我而言，英語不只是謀生的工具，它構成了我思索世界的核心維度。如果你期待一段更豐富、更立體、真正具備思辨力的英語學習旅程，我會是你最堅實的領路人。
+            </p>
+          </div>
+
+          <!-- Credential Badges Grid -->
+          <div class="pt-4 grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs">
+            <div class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm">
+              <span class="text-slate-400 block font-medium">教育背景</span>
+              <span class="font-bold text-slate-800">台師大教育專業背景</span>
+            </div>
+            <div class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm">
+              <span class="text-slate-400 block font-medium">國際教學認證</span>
+              <span class="font-bold text-slate-800">ASU TESOL Certified</span>
+            </div>
+            <div class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm">
+              <span class="text-slate-400 block font-medium">語言能力證照</span>
+              <span class="font-bold text-slate-800">多益 960 (金證)</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Parent Peace of Mind & FAQ Section -->
+  <section id="parents-faq" class="py-24 bg-white border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold tracking-widest text-emerald-600 uppercase bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100">
+          Parent Peace of Mind
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-3">
+          專為家長設計的安心省心機制
+        </h2>
+        <p class="text-slate-600 text-sm mt-3">
+          雙薪父母平時忙碌，我們透過科技自動化閉環與全透明課堂，讓您不再為了孩子的英文生悶氣。
+        </p>
+      </div>
+
+      <!-- 3 Guarantees Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        
+        <div class="p-7 rounded-3xl bg-slate-50 border border-slate-200/80 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl mb-4 font-black">
+              🛡️
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">免列印、免催盯作業</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              下課後 10 秒自動派發客製作業與 AI 自然真人語調發音音檔。孩子拿起手機或平板即可隨點隨聽、線上作答繳交，徹底終結家庭催作業的緊張衝突。
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200 text-[11px] font-bold text-emerald-700 flex items-center gap-1">
+            ✔ 100% 雲端自動推播
+          </div>
+        </div>
+
+        <div class="p-7 rounded-3xl bg-slate-50 border border-slate-200/80 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-sky-100 text-sky-700 flex items-center justify-center text-xl mb-4 font-black">
+              🔍
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">白板板書全程透明可查</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              每次上課均在 Figma 雲端白板進行思維透視，所有即時批註、錯誤分析與觀念圖解永久保存。家長隨時可點開連結翻閱，不再「下課後一片空白」。
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200 text-[11px] font-bold text-sky-700 flex items-center gap-1">
+            ✔ 終生無損筆跡雲端留存
+          </div>
+        </div>
+
+        <div class="p-7 rounded-3xl bg-slate-50 border border-slate-200/80 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-indigo-100 text-indigo-700 flex items-center justify-center text-xl mb-4 font-black">
+              📈
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">課後雙軌主動同步進度</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              不只教學生，每次下課後主動向家長同步本週盲點突破重點、作答答對率與段考複習進度。真正做到家長隨時掌握學習成效、安心不盲猜。
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200 text-[11px] font-bold text-indigo-700 flex items-center gap-1">
+            ✔ 定期進度與盲點週報
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Parent FAQ Accordion -->
+      <div class="max-w-3xl mx-auto">
+        <div class="text-center mb-8">
+          <span class="text-xs font-bold text-sky-600 tracking-wider uppercase">Got Questions?</span>
+          <h3 class="text-2xl font-extrabold text-slate-900 mt-1">家長最常詢問的 4 大疑惑解答</h3>
+        </div>
+        
+        <div class="space-y-4 text-sm">
+          
+          <!-- FAQ 1 -->
+          <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200">
+            <h4 class="font-bold text-slate-900 flex items-center gap-2 text-sm sm:text-base">
+              <span class="w-6 h-6 rounded-lg bg-sky-100 text-sky-700 text-xs font-bold flex items-center justify-center shrink-0">Q1</span>
+              孩子英文基礎很慢、做題想很多又怕出錯，跟得上廷暉老師的步調嗎？
+            </h4>
+            <p class="text-slate-600 text-xs sm:text-sm mt-2.5 leading-relaxed pl-8">
+              完全跟得上！廷暉老師出身師大教育專業，深諳教育心理學與「認知負荷理論」。我們不以題海施壓，而是像對待育穎同學一樣「先扎根、建立做題安全感」，透過視覺白板分步引導，讓孩子逐步找回自信與節奏。
+            </p>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200">
+            <h4 class="font-bold text-slate-900 flex items-center gap-2 text-sm sm:text-base">
+              <span class="w-6 h-6 rounded-lg bg-sky-100 text-sky-700 text-xs font-bold flex items-center justify-center shrink-0">Q2</span>
+              線上教學需要準備昂貴設備嗎？孩子盯著螢幕會不會容易恍神？
+            </h4>
+            <p class="text-slate-600 text-xs sm:text-sm mt-2.5 leading-relaxed pl-8">
+              完全不需要昂貴設備！只需一台一般筆電、桌機或 iPad 平板（搭配耳機麥克風即可）。課堂中學生必須在白板上同步圈選、填答與討論，並非單向聽講，90 分鐘節奏緊湊，注意力反而比傳統大班補習更集中。
+            </p>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200">
+            <h4 class="font-bold text-slate-900 flex items-center gap-2 text-sm sm:text-base">
+              <span class="w-6 h-6 rounded-lg bg-sky-100 text-sky-700 text-xs font-bold flex items-center justify-center shrink-0">Q3</span>
+              30 分鐘免費試教診斷是怎麼進行的？會強迫推銷嗎？
+            </h4>
+            <p class="text-slate-600 text-xs sm:text-sm mt-2.5 leading-relaxed pl-8">
+              絕不強迫推銷。這是一次客觀的「英語認知體檢」，廷暉老師會針對孩子過去的考卷、作文或盲點進行剖析，並提供具體的突破方案與建議。若評估後覺得暫不適合，您也能帶著這份診斷建議自行複習。
+            </p>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200">
+            <h4 class="font-bold text-slate-900 flex items-center gap-2 text-sm sm:text-base">
+              <span class="w-6 h-6 rounded-lg bg-sky-100 text-sky-700 text-xs font-bold flex items-center justify-center shrink-0">Q4</span>
+              平日課後如果孩子寫作業或學校考卷遇到問題，可以問老師嗎？
+            </h4>
+            <p class="text-slate-600 text-xs sm:text-sm mt-2.5 leading-relaxed pl-8">
+              可以！我們提供非同步 LINE 課後問答支援。孩子平日複習遇到卡關題目隨時拍照傳送至 LINE，廷暉老師會在空檔透過語音或白板截圖親自解惑，不讓問題積累到下週。
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Booking & Contact Section -->
+  <section id="booking" class="py-24 bg-slate-900 text-white relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center space-y-4 mb-10">
+        <span class="text-xs font-bold tracking-widest text-sky-400 uppercase bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/20">
+          Book a Consultation
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+          開啟你的個人化英語認知升級計畫
+        </h2>
+        <p class="text-slate-400 text-sm max-w-xl mx-auto">
+          預約 30 分鐘免費線上診斷（Google Meet / Discord）。我們將檢視孩子過去的學習盲點，並提供專屬學習成長建議。
+        </p>
+      </div>
+
+      <!-- Parent Fast-Track via LINE -->
+      <div class="bg-gradient-to-r from-emerald-950 via-slate-800 to-slate-900 rounded-3xl p-6 sm:p-8 border border-emerald-500/40 shadow-2xl mb-8 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-4">
+          <div class="w-14 h-14 rounded-2xl bg-[#06C755] flex items-center justify-center text-white font-black text-2xl shadow-lg shadow-[#06C755]/30 shrink-0">
+            <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 5.92 2 10.75c0 2.97 1.7 5.61 4.35 7.15-.19.68-.69 2.47-.79 2.85-.13.48.18.47.37.34.16-.1 2.42-1.63 3.39-2.29.87.16 1.77.25 2.68.25 5.52 0 10-3.92 10-8.75S17.52 2 12 2z"/></svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-white font-bold text-lg">習慣用 LINE 快速溝通？</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold border border-emerald-500/30">推薦家長首選</span>
+            </div>
+            <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
+              直接加廷暉老師 LINE（ID：<code class="text-emerald-300 font-bold bg-slate-900/90 px-2 py-0.5 rounded text-xs">TingZheng2</code>），直接傳送孩子近期的考卷、段考錯題或作文，免填表單，快速為孩子安排 30 分鐘線上診斷！
+            </p>
+          </div>
+        </div>
+        
+        <div class="flex items-center gap-3 w-full md:w-auto shrink-0 justify-center">
+          <button type="button" onclick="copyLineId()" class="px-4 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold border border-slate-600 transition flex items-center gap-1.5 shadow-sm active:scale-95 cursor-pointer">
+            <span>📋 複製 LINE ID</span>
+          </button>
+          <a href="https://line.me/ti/p/~TingZheng2" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-[#06C755] hover:bg-[#05b34c] text-white text-xs font-bold shadow-lg shadow-[#06C755]/30 transition flex items-center gap-2 active:scale-95">
+            <span>💬 開啟 LINE 立即諮詢</span>
+            <span>➔</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-slate-800 rounded-3xl p-8 md:p-10 border border-slate-700 shadow-2xl">
+        <div class="mb-6 pb-4 border-b border-slate-700/80 flex items-center justify-between">
+          <h3 class="text-base font-bold text-white">亦可透過線上表單詳細填寫預約</h3>
+          <span class="text-xs text-slate-400">填寫後 24 小時內專人回覆</span>
+        </div>
+        <form class="space-y-6" onsubmit="event.preventDefault(); alert('感謝您的預約！廷暉老師將於 24 小時內透過 Email 或 LINE 與您確認診斷時段。');">
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-2">學生姓名 / 稱呼 *</label>
+              <input type="text" required placeholder="例如：林同學" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-sky-500">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-2">聯絡 Email *</label>
+              <input type="email" required placeholder="your.email@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-sky-500">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-2">LINE ID 或聯絡電話</label>
+              <input type="text" placeholder="方便即時確認試教時段" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-sky-500">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-2">目標學習項目 / 考試 *</label>
+              <select required class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white text-sm focus:outline-none focus:border-sky-500">
+                <option value="cap">國中教育會考 A++ 衝刺班</option>
+                <option value="gsat">高中學測 / 分科作文破分階梯</option>
+                <option value="toeic">新制多益 850+ 藍金證書班</option>
+                <option value="ielts">雅思 Academic 7.0+ 跨學科精讀</option>
+                <option value="gept">全民英檢 (中級 / 中高級衝刺)</option>
+                <option value="resume">FastEdu 職涯/留學英文履歷精修</option>
+                <option value="other">其他客製化需求</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-2">當前英語學習遇到的最大瓶頸或期望</label>
+            <textarea rows="4" placeholder="例如：文法選擇題常錯、作文卡在 11 分無法突破、多益聽力無法抓到連音、不知如何規劃複習進度..." class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-sky-500"></textarea>
+          </div>
+
+          <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 text-white font-bold text-base shadow-lg shadow-sky-500/25 transition">
+            送出預約申請 ➔
+          </button>
+
+          <div class="text-center text-xs text-slate-400 pt-2 space-y-1">
+            <div>亦可直接聯繫：Email：<a href="mailto:wandymellow2@gmail.com" class="text-sky-400 underline font-medium">wandymellow2@gmail.com</a> ｜ 電話：0935-535-510</div>
+            <div>LINE 官方諮詢 ID：<a href="https://line.me/ti/p/~TingZheng2" target="_blank" rel="noopener noreferrer" class="text-emerald-400 underline font-bold">TingZheng2</a></div>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-xl bg-sky-600 flex items-center justify-center text-white font-bold text-sm">
+          T
+        </div>
+        <div>
+          <span class="text-white font-bold block">Ting's English Lab 廷暉英語認知工坊</span>
+          <span class="text-slate-500 text-[11px]">Cognitive Engineering × AI-Augmented Tutoring</span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <a href="#philosophy" class="hover:text-white transition">教學理念</a>
+        <a href="#ai-automation" class="hover:text-white transition">AI 自動化</a>
+        <a href="#certificates" class="hover:text-white transition">官方證照</a>
+        <a href="#dashboard-demo" class="hover:text-white transition">實力儀表板</a>
+        <a href="#booking" class="hover:text-white transition">預約諮詢</a>
+      </div>
+
+      <div class="text-slate-500 text-center md:text-right">
+        © 2026 Ting-Huei Cheng. All rights reserved.
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Full Resolution Certificates & Screenshots -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md hidden flex items-center justify-center p-4" onclick="closeLightbox()">
+    <div class="relative max-w-4xl w-full bg-white rounded-3xl p-4 shadow-2xl overflow-hidden" onclick="event.stopPropagation()">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+        <h4 id="lightbox-title" class="text-sm font-bold text-slate-900 truncate">檢視原圖</h4>
+        <button onclick="closeLightbox()" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center text-base font-bold transition">
+          ✕
+        </button>
+      </div>
+      <div class="mt-3 flex items-center justify-center max-h-[80vh] overflow-auto">
+        <img id="lightbox-img" src="" alt="放大預覽" class="max-h-[75vh] w-auto object-contain rounded-xl shadow-sm">
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Scripts -->
+  <script>
+    // Lightbox Controls
+    function openLightbox(src, title) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-title').innerText = title || '檢視原圖';
+      document.getElementById('lightbox-modal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox-modal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // Tab Switching for AI Pipeline Preview
+    function switchPreview(tab) {
+      const tabs = ['student', 'parent', 'homework'];
+      tabs.forEach(t => {
+        document.getElementById(`preview-${t}`).classList.add('hidden');
+        const btn = document.getElementById(`tab-btn-${t}`);
+        btn.classList.remove('bg-sky-600', 'text-white');
+        btn.classList.add('bg-slate-700', 'text-slate-300');
+      });
+
+      document.getElementById(`preview-${tab}`).classList.remove('hidden');
+      const activeBtn = document.getElementById(`tab-btn-${tab}`);
+      activeBtn.classList.remove('bg-slate-700', 'text-slate-300');
+      activeBtn.classList.add('bg-sky-600', 'text-white');
+    }
+
+    // Dashboard Data Model
+    const studentData = {
+      bowen: {
+        target: "會考 A++ 滿級分",
+        targetSub: "已通過英檢中級 (初試 172 分 / 複試雙合格)",
+        score: "全文法複習中 6/16 單元",
+        scoreSub: "Unit 6 名詞的格與代名詞",
+        notes: "620 筆筆跡 / 6 回試卷",
+        notesSub: "已鎖定 8 個高頻盲點",
+        hw: "92%",
+        hwSub: "Notion 已全數繳交 (2/2)",
+        polygon: "0,-65 60.6,-35 57.1,33 0,60 -62.3,36 -56.3,-32.5",
+        sub1: "細節查核: 72 (B1+)",
+        sub2: "文法架構: 70 (B1+)",
+        sub3: "長篇耐力: 60 (B1)",
+        analysis: "柏文已正式通過全民英檢中級（初試 172 分、複試雙合格），具備 CEFR B1+ / 高中畢業程度之英文實戰力；目前正全力重構國中全文法 16 單元。白板題目答題流暢，下階段將導入長篇會考雙篇閱讀題型提速。",
+        tags: [
+          { text: "不定代名詞範圍限制", type: "warn" },
+          { text: "關係代名詞省略條件", type: "warn" },
+          { text: "使役動詞被動受詞補語", type: "info" },
+          { text: "✔ 完成式持續與經驗辨析 (已掌握)", type: "done" }
+        ],
+        parentMsg: "「柏文在文法 Unit 6 的觀念掌握度極佳，隨堂測驗答對率達 93%。本次指派的課後作業包含 40 個會考核心單字與全真題組，音檔已備妥，請提醒孩子於週日前完成複習。」"
+      },
+      yuying: {
+        target: "多益 550~600+ 扎根衝刺",
+        targetSub: "全真模擬測驗與文法扎根階段",
+        score: "520 分 (區間 450~580)",
+        scoreSub: "Part 5 填空與 Part 7 閱讀打底",
+        notes: "320 筆筆跡 / 歷次隨堂字彙抽測",
+        notesSub: "鎖定詞性辨析與主謂一致盲點",
+        hw: "88%",
+        hwSub: "Notion 已核銷 (2/2)",
+        polygon: "0,-52 48.5,-28 50.2,29 0,55 -48.5,28 -43.3,-25",
+        sub1: "文法結構: 56 (B1)",
+        sub2: "細節查核: 58 (B1)",
+        sub3: "答題配速: 50 (A2+)",
+        analysis: "育穎目前以多益全真模擬測驗與課堂單字複習作業為學習主軸。做題風格深思熟慮，隨堂單字複習掌握度穩定回升；後續課堂將透過高頻題型結構引導，持續加強做題節奏與直覺反應，克服怕錯心理。",
+        tags: [
+          { text: "高頻詞性辨析 (名詞/形容詞/副詞)", type: "warn" },
+          { text: "主詞動詞單複數一致性", type: "warn" },
+          { text: "基礎商務情境高頻 40 單字", type: "info" },
+          { text: "✔ Part 5 基礎時態判斷 (已掌握)", type: "done" }
+        ],
+        parentMsg: "「育穎英文有進步很多了！雖然目前答題想比較多、怕錯誤速度偏慢，但基礎實力逐步扎根後已逐漸順手，我們會持續鼓勵孩子保持信心！」"
+      },
+      zien: {
+        target: "雅思 Academic Band 7.0+",
+        targetSub: "跨學科精讀打底階段",
+        score: "AWL 精讀推進中",
+        scoreSub: "推力理論 ➔ 神經可塑性 NAD+",
+        notes: "418 筆筆跡 / 2 大學門原著",
+        notesSub: "長難句與大作文造句中",
+        hw: "95%",
+        hwSub: "作文與精讀均已繳交",
+        polygon: "0,-75 62.3,-36 64.1,37 0,68 -60.6,35 -52,-30",
+        sub1: "詞彙深度: 75 (C1)",
+        sub2: "語境推論: 74 (C1)",
+        sub3: "答題配速: 60 (B2)",
+        analysis: "子恩目前以 Google Drive 雅思七大跨學科閱讀教材精讀與基礎寫作練習為主。已完整研讀行為經濟學「推力理論 Nudge Theory」，目前推進生化神經科學「NAD+ 與認知優化」。課堂聚焦在長難句剖析與 AWL 學術字彙。",
+        tags: [
+          { text: "生化神經學專有搭配詞", type: "warn" },
+          { text: "Task 2 複雜句論證銜接", type: "warn" },
+          { text: "AWL 學術字彙抽測", type: "info" },
+          { text: "✔ 推力理論主旨推論 (已掌握)", type: "done" }
+        ],
+        parentMsg: "「子恩在長難句結構剖析的掌握度非常深刻，已能精準解析高難度學術原文。本週作業已針對生物與心理學領域高階詞彙出題，請鼓勵孩子定期聽音檔複習。」"
+      },
+      joseph: {
+        target: "高中英文段考 90+ 頂標",
+        targetSub: "高二上龍騰版第三冊",
+        score: "段考實測穩定 88~92 分",
+        scoreSub: "L1~L3 課文與核心文法",
+        notes: "380 筆筆跡 / 3 個單元",
+        notesSub: "字根字首與延伸詞族庫",
+        hw: "90%",
+        hwSub: "Notion 已核銷",
+        polygon: "0,-68 64.1,-37 56.3,32.5 0,66 -60.6,35 -58.9,-34",
+        sub1: "文法結構: 74 (B2)",
+        sub2: "細節比對: 70 (B2)",
+        sub3: "語境推論: 65 (B1+)",
+        analysis: "Joseph 在高二龍騰版課本核心單元掌握度高，分詞構句、名詞子句與倒裝句題型穩定。課堂重點著重在段考大題克漏字首字母提示題型，以及深層搭配詞擴充。",
+        tags: [
+          { text: "首字母提示克漏字速選", type: "warn" },
+          { text: "分詞構句主被動主詞確認", type: "warn" },
+          { text: "高二龍騰延伸片語群", type: "info" },
+          { text: "✔ 假設語氣與倒裝句 (已掌握)", type: "done" }
+        ],
+        parentMsg: "「Joseph 本週段考複習狀況良好，龍騰版第三冊單字與文法測驗均達 90 分以上。今日已安排克漏字與閱讀題組鞏固記憶。」"
+      }
+    };
+
+    function loadDashboardStudent(key) {
+      const data = studentData[key];
+      if (!data) return;
+
+      ['bowen', 'yuying', 'zien', 'joseph'].forEach(k => {
+        const btn = document.getElementById(`dash-btn-${k}`);
+        if (k === key) {
+          btn.className = "px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-white shadow-sm transition";
+        } else {
+          btn.className = "px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-600 hover:text-slate-900 border border-slate-200 transition";
+        }
+      });
+
+      document.getElementById('d-target').innerText = data.target;
+      document.getElementById('d-target-sub').innerText = data.targetSub;
+      document.getElementById('d-score').innerText = data.score;
+      document.getElementById('d-score-sub').innerText = data.scoreSub;
+      document.getElementById('d-notes').innerText = data.notes;
+      document.getElementById('d-notes-sub').innerText = data.notesSub;
+      document.getElementById('d-hw').innerHTML = `${data.hw} <span class="text-xs font-normal text-amber-600">優良</span>`;
+      document.getElementById('d-hw-sub').innerText = data.hwSub;
+
+      document.getElementById('d-radar-poly').setAttribute('points', data.polygon);
+
+      document.getElementById('d-sub-1').innerText = data.sub1;
+      document.getElementById('d-sub-2').innerText = data.sub2;
+      document.getElementById('d-sub-3').innerText = data.sub3;
+
+      document.getElementById('d-analysis').innerText = data.analysis;
+      document.getElementById('d-parent-msg').innerText = data.parentMsg;
+
+      const tagsContainer = document.getElementById('d-tags');
+      tagsContainer.innerHTML = '';
+      data.tags.forEach(t => {
+        const span = document.createElement('span');
+        if (t.type === 'warn') {
+          span.className = "px-2.5 py-1 rounded-lg bg-red-50 text-red-600 border border-red-100 text-xs font-medium";
+        } else if (t.type === 'info') {
+          span.className = "px-2.5 py-1 rounded-lg bg-sky-50 text-sky-600 border border-sky-100 text-xs font-medium";
+        } else if (t.type === 'done') {
+          span.className = "px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-600 border border-emerald-100 text-xs font-medium";
+        }
+        span.innerText = t.text;
+        tagsContainer.appendChild(span);
+      });
+    }
+
+    // LINE Quick Consultation ID Copy Helper
+    function copyLineId() {
+      const lineId = 'TingZheng2';
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(lineId).then(() => {
+          showToast('已複製廷暉老師 LINE ID：' + lineId + '，歡迎開啟 LINE 加入好友！');
+        }).catch(() => {
+          fallbackCopy(lineId);
+        });
+      } else {
+        fallbackCopy(lineId);
+      }
+    }
+
+    function fallbackCopy(text) {
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+      showToast('已複製廷暉老師 LINE ID：' + text + '，歡迎開啟 LINE 加入好友！');
+    }
+
+    function showToast(msg) {
+      let toast = document.getElementById('toast-notification');
+      if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'toast-notification';
+        toast.className = 'fixed top-24 left-1/2 -translate-x-1/2 z-50 px-5 py-3 rounded-2xl bg-slate-900/95 backdrop-blur-md text-white text-xs sm:text-sm font-bold shadow-2xl border border-emerald-500/60 flex items-center gap-2.5 transition-all duration-300 pointer-events-none opacity-0 translate-y-3';
+        document.body.appendChild(toast);
+      }
+      toast.innerHTML = `<span class="w-2.5 h-2.5 rounded-full bg-[#06C755] animate-ping shrink-0"></span><span>${msg}</span>`;
+      toast.classList.remove('opacity-0', 'translate-y-3');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'translate-y-3');
+      }, 3000);
+    }
+  </script>
+
+  <!-- Sticky Floating Green LINE Consultation Widget (Bottom-Right) -->
+  <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-2">
+    <!-- Attention Tooltip on Desktop -->
+    <div class="hidden md:flex items-center gap-2 bg-slate-900/90 backdrop-blur-md text-white text-xs py-1.5 px-3 rounded-xl shadow-lg border border-slate-700/80">
+      <span class="w-2 h-2 rounded-full bg-[#06C755] animate-pulse"></span>
+      <span>家長快速諮詢｜ID: <strong class="text-emerald-400 font-bold">TingZheng2</strong></span>
+    </div>
+
+    <!-- Main Action Buttons Pill -->
+    <div class="flex items-center gap-2 shadow-2xl rounded-full">
+      <button type="button" onclick="copyLineId()" title="點擊複製 LINE ID: TingZheng2" class="hidden sm:flex items-center justify-center w-11 h-11 rounded-full bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 text-xs font-bold transition hover:scale-105 active:scale-95 shadow-md cursor-pointer">
+        📋
+      </button>
+      <a href="https://line.me/ti/p/~TingZheng2" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 px-5 py-3.5 rounded-full bg-[#06C755] hover:bg-[#05b34c] text-white font-bold text-xs sm:text-sm shadow-xl shadow-[#06C755]/35 transition-all duration-300 hover:scale-105 active:scale-95 group">
+        <svg class="w-6 h-6 fill-current shrink-0" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 5.92 2 10.75c0 2.97 1.7 5.61 4.35 7.15-.19.68-.69 2.47-.79 2.85-.13.48.18.47.37.34.16-.1 2.42-1.63 3.39-2.29.87.16 1.77.25 2.68.25 5.52 0 10-3.92 10-8.75S17.52 2 12 2z"/></svg>
+        <span class="tracking-wide">家長 LINE 快速諮詢</span>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
