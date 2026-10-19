@@ -2018,8 +2018,8 @@
     }
 
     // Webhook Configuration for Notion Consultation Database
-    // 部署 Google Apps Script 網頁應用程式後填入此處，即可達成 100% 毫秒級自動同步
-    const NOTION_WEBHOOK_URL = ""; 
+    // 已成功對接 Google Apps Script 雲端中繼，達成 100% 毫秒級自動同步
+    const NOTION_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbx6ohwDOYdekYkgTUXrcH66e5aJqt6F--PCEbjYVcAAxt-00QIjy4kyu--U79ngM5AZ/exec"; 
 
     // AJAX FormSubmit & Notion Webhook Handler for Booking Form
     async function handleBookingSubmit(event) {
@@ -2041,13 +2041,16 @@
       const formData = new FormData(form);
 
       try {
-        // 1. 若已配置 Notion Webhook，同步發送至 Google Apps Script 雲端中繼
+        // 1. 同步發送至 Google Apps Script 雲端中繼（即時寫入 Notion Consultation 資料庫）
         if (NOTION_WEBHOOK_URL) {
           try {
+            const jsonPayload = {};
+            formData.forEach((value, key) => { jsonPayload[key] = value; });
             fetch(NOTION_WEBHOOK_URL, {
               method: "POST",
               mode: "no-cors",
-              body: formData
+              headers: { "Content-Type": "text/plain" },
+              body: JSON.stringify(jsonPayload)
             });
           } catch (hookErr) {
             console.warn("Notion Webhook 轉發警告:", hookErr);
